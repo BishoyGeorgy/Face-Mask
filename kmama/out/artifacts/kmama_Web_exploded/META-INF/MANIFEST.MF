@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: kmama
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: bishoygeorgy
+Implementation-Vendor-Id: com.learning
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8
+Main-Class: ${start-class}
+

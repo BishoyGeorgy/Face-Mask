@@ -1,6 +1,6 @@
 package com.learning.kmama.controllers;
 
-import com.learning.kmama.entities.User;
+import com.learning.kmama.entities.UserEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,16 +30,16 @@ import java.util.List;
 @RequestMapping("/api")
 public class ApiController {
 
-    private static List<User> users = new ArrayList<>();
+    private static List<UserEntity> users = new ArrayList<>();
 
     static {
         for (int i = 0; i < 10; i++) {
-            users.add(new User("First Name " + i, "last Name " + i));
+            //users.add(new UserEntity("First Name " + i, "last Name " + i));
         }
     }
 
-    @GetMapping("/users")
-    public List<User> getAllUsers() {
-        return users;
-    }
+//    @GetMapping("/users")
+//    public List<User> getAllUsers() {
+//        return users;
+//    }
 }
